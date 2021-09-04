@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://FengShuHuan.github.io</id>
     <title>一千万年银河の笔记</title>
-    <updated>2021-09-04T04:31:54.435Z</updated>
+    <updated>2021-09-04T04:32:59.349Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://FengShuHuan.github.io"/>
     <link rel="self" href="https://FengShuHuan.github.io/atom.xml"/>
@@ -20,7 +20,6 @@
 2.音乐播放：使用网易云音乐外链粘贴，src里的    链接要加http<br>
 3.内置视频：video标签  〈video src&quot;…/…&quot;〉  〈/video〉<br>
 4.鼠标停留文字：div标签内用title=&quot;……&quot;</p>
-<p><img src="https://FengShuHuan.github.io/post-images/1630729290906.jpg" alt="" loading="lazy"><!-- more --></p>
 ]]></content>
     </entry>
     <entry>
