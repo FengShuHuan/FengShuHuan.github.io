@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://FengShuHuan.github.io</id>
     <title>一千万年银河の笔记</title>
-    <updated>2021-09-04T05:05:10.208Z</updated>
+    <updated>2021-09-04T06:36:22.936Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://FengShuHuan.github.io"/>
     <link rel="self" href="https://FengShuHuan.github.io/atom.xml"/>
@@ -10,6 +10,20 @@
     <logo>https://FengShuHuan.github.io/images/avatar.png</logo>
     <icon>https://FengShuHuan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 一千万年银河の笔记</rights>
+    <entry>
+        <title type="html"><![CDATA[日语五十音の速记]]></title>
+        <id>https://FengShuHuan.github.io/post/ri-yu-wu-shi-yin-nosu-ji/</id>
+        <link href="https://FengShuHuan.github.io/post/ri-yu-wu-shi-yin-nosu-ji/">
+        </link>
+        <updated>2021-09-04T06:25:48.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="https://FengShuHuan.github.io/post-images/1630736963598.jpg" alt="" loading="lazy"><br>
+<img src="https://FengShuHuan.github.io/post-images/1630736767037.jpg" alt="" loading="lazy"></p>
+]]></summary>
+        <content type="html"><![CDATA[<p><img src="https://FengShuHuan.github.io/post-images/1630736963598.jpg" alt="" loading="lazy"><br>
+<img src="https://FengShuHuan.github.io/post-images/1630736767037.jpg" alt="" loading="lazy"></p>
+<!-- more -->
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[网页制作笔记]]></title>
         <id>https://FengShuHuan.github.io/post/wang-ye-zhi-zuo-bi-ji/</id>
