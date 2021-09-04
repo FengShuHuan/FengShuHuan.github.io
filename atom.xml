@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://FengShuHuan.github.io</id>
     <title>一千万年银河の笔记</title>
-    <updated>2021-09-04T14:01:41.414Z</updated>
+    <updated>2021-09-04T14:27:48.034Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://FengShuHuan.github.io"/>
     <link rel="self" href="https://FengShuHuan.github.io/atom.xml"/>
@@ -11,14 +11,29 @@
     <icon>https://FengShuHuan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 一千万年银河の笔记</rights>
     <entry>
+        <title type="html"><![CDATA[Markdown语法]]></title>
+        <id>https://FengShuHuan.github.io/post/markdown-yu-fa/</id>
+        <link href="https://FengShuHuan.github.io/post/markdown-yu-fa/">
+        </link>
+        <updated>2021-09-04T14:17:07.000Z</updated>
+        <content type="html"><![CDATA[<p>嵌入视频：<br>
+<code>&lt;iframe src=&quot;http://player.bilibili.com/player.html?aid=675016644&amp;bvid=BV1mU4y1E7bU&amp;cid=396752736&amp;page=1&quot; scrolling=&quot;no&quot;width=&quot;800px&quot; height=&quot;600px&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;</code><br>
+嵌入音频：<audio id="audio" controls="" preload="none"></p>
+<source id="mp3" src="http://music.163.com/outchain/player?type=2&id=384438&auto=1&height=66">
+</audio>  
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=384438&auto=1&height=66"></iframe>]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[【和声解析】WANDS——《世界中の誰よりきっと》LIVE版]]></title>
         <id>https://FengShuHuan.github.io/post/he-sheng-jie-xi-wands-lesslessshi-jie-zhong-noshui-yorikitutogreatergreater-live-ban/</id>
         <link href="https://FengShuHuan.github.io/post/he-sheng-jie-xi-wands-lesslessshi-jie-zhong-noshui-yorikitutogreatergreater-live-ban/">
         </link>
         <updated>2021-09-04T08:42:07.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
+        <content type="html"><![CDATA[<iframe src="http://player.bilibili.com/player.html?aid=675016644&bvid=BV1mU4y1E7bU&cid=396752736&page=1" scrolling="no"width="700px" height="400px" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>  
+<blockquote>
 <p>首先这是我本人非常喜欢的一首歌曲，之前听过专辑里的原版，以及很多翻唱版本（包括粤语版许志安的《唯独你是不可取替》和作曲者织田哲郎本人翻唱的bossanova版），但是给我印象最深的，是这个演唱会LIVE版。还记得第一次在B站看到这个视频的时候，我就深深地被上杉升的声线以及柴崎浩的吉他所吸引。最重要的，在我的印象中这首歌的原版是那种很经典却也有些普遍的日系和声走向，但当我听到这个演唱会版本时，耳朵告诉我这个吉他编排有非常多的细节，甚至有一点点爵士的东西在里面，连听几遍后，便决定拿起吉他将它扒下来。</p>
 </blockquote>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=384438&auto=0&height=66"></iframe>  
 <p>  在扒谱学习的过程中，我不时会感叹霓虹吉他手对和声走向以及旋律线条独有的细节和审美，使相对普通的和声走向听起来变得非常高级，写到这里，我突然想起最近上的网课里某位老师所讲的“线条”概念，和弦服务于旋律，旋律想要变的好听，就要形成流动的线条~~这大概也是霓虹歌曲非常抓耳的一个重要原因，说的有些多，下面就来分析一下我所扒的这版《世界中の誰よりきっと》（中译：《比起世界上的任何人都爱你》）</p>
 <p>Intro部分：</p>
 <p>A G#m7b5 C#7F#m7 A7</p>
