@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://FengShuHuan.github.io</id>
     <title>一千万年银河の笔记</title>
-    <updated>2021-09-11T11:32:32.540Z</updated>
+    <updated>2021-09-21T06:33:54.180Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://FengShuHuan.github.io"/>
     <link rel="self" href="https://FengShuHuan.github.io/atom.xml"/>
@@ -11,12 +11,43 @@
     <icon>https://FengShuHuan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 一千万年银河の笔记</rights>
     <entry>
-        <title type="html"><![CDATA[00]]></title>
+        <title type="html"><![CDATA[链接外部css样式表]]></title>
+        <id>https://FengShuHuan.github.io/post/lian-jie-wai-bu-css-yang-shi-biao/</id>
+        <link href="https://FengShuHuan.github.io/post/lian-jie-wai-bu-css-yang-shi-biao/">
+        </link>
+        <updated>2021-09-21T06:15:44.000Z</updated>
+        <content type="html"><![CDATA[<p><code>&lt;link href=&quot;xin2.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;</code><br>
+href:规定链接的目标地址,指定超链接目标的URL<br>
+rel:指示被链接的文档是一个样式表(stlyesheet)<br>
+type:类型为文本或者是css</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CSS Id 和 Class]]></title>
         <id>https://FengShuHuan.github.io/post/00/</id>
         <link href="https://FengShuHuan.github.io/post/00/">
         </link>
         <updated>2021-09-05T07:30:14.000Z</updated>
-        <content type="html"><![CDATA[<p><video src="https://www.acfun.cn/v/ac16851116?shareUid=13118696" width="800px" height="600px" controls="controls"></video></p>
+        <content type="html"><![CDATA[<h1 id="id-和-class-选择器">id 和 class 选择器</h1>
+<p>如果你要在HTML元素中设置CSS样式，你需要在元素中设置&quot;id&quot; 和 &quot;class&quot;选择器。</p>
+<h2 id="id-选择器">id 选择器</h2>
+<p>id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。</p>
+<p>HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 &quot;#&quot; 来定义。</p>
+<p>以下的样式规则应用于元素属性 id=&quot;para1&quot;:</p>
+<p>实例<br>
+<code>#para1 { text-align:center; color:red; }</code></p>
+<p>Remark ID属性不要以数字开头，数字开头的ID在 Mozilla/Firefox 浏览器中不起作用。</p>
+<h2 id="class-选择器">class 选择器</h2>
+<p>class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。</p>
+<p>class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一个点&quot;.&quot;号显示：</p>
+<p>在以下的例子中，所有拥有 center 类的 HTML 元素均为居中。</p>
+<p>实例<br>
+<code>.center {text-align:center;}</code></p>
+<p>你也可以指定特定的HTML元素使用class。</p>
+<p>在以下实例中, 所有的 p 元素使用 class=&quot;center&quot; 让该元素的文本居中:</p>
+<p>实例<br>
+<code>p.center {text-align:center;}</code></p>
+<p><strong>Remark 类名的第一个字符不能使用数字！它无法在 Mozilla 或 Firefox 中起作用。</strong></p>
 ]]></content>
     </entry>
     <entry>
@@ -34,17 +65,8 @@
         <link href="https://FengShuHuan.github.io/post/markdown-yu-fa/">
         </link>
         <updated>2021-09-04T14:17:07.000Z</updated>
-        <content type="html"><![CDATA[<p>嵌入视频：<br>
-<code>&lt;iframe src=&quot;http://player.bilibili.com/player.html?aid=675016644&amp;bvid=BV1mU4y1E7bU&amp;cid=396752736&amp;page=1&quot; scrolling=&quot;no&quot;width=&quot;auto&quot; height=&quot;auto&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;</code></p>
-<p>嵌入音频：</p>
-<pre><code class="language-&lt;audio">&lt;source id=&quot;mp3&quot; src=&quot;http://music.163.com/outchain/player?type=2&amp;id=384438&amp;auto=1&amp;height=66&quot;&gt;&lt;/audio&gt; ```    
-   
-   
-```&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;https://music.163.com/outchain/player?type=2&amp;id=384438&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;```  
-嵌入本地视频  
-```&lt;video src=&quot;./test.mp4&quot; width=&quot;800px&quot; height=&quot;600px&quot; controls=&quot;controls&quot;&gt;&lt;/video&gt;``` 
-嵌入网络视频  
-```&lt;video src=&quot;https://&quot; width=&quot;800px&quot; height=&quot;600px&quot; controls=&quot;controls&quot;&gt;&lt;/video&gt;```</code></pre>
+        <content type="html"><![CDATA[<p>1.标题：     一级标题换行=====<br>
+二级 标 题      换行---------</p>
 ]]></content>
     </entry>
     <entry>
