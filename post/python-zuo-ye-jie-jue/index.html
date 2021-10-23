@@ -2,28 +2,24 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>关于 | 一千万年银河の笔记</title>
+<title>Python作业解决 | 一千万年银河の笔记</title>
 <link rel="shortcut icon" href="https://FengShuHuan.github.io/favicon.ico?v=1634988391862">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://FengShuHuan.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="关于 | 一千万年银河の笔记 - Atom Feed" href="https://FengShuHuan.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="Python作业解决 | 一千万年银河の笔记 - Atom Feed" href="https://FengShuHuan.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="
-欢迎来到我的小站呀，很高兴遇见你！🤝
-
-🏠 关于本站
-闲的没事搞的，用来写笔记
-👨‍💻 博主是谁
-带专生一枚
-⛹ 兴趣爱好
-游戏
-📬 联系我呀
-🐧:3497504389
+    <meta name="description" content="要求:
+读取Attendance.txt文件内的出勤统计表,存放位置任意.
+计算各人的请假天数
+计算各人的出勤率
+出勤率80%以上为&quot;良好&quot;,包括80%
+出勤率80%以下为&quot;较差&quot;
+计算集体出勤率.
 ..." />
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="Python" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -85,39 +81,67 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              关于
+              Python作业解决
             </h2>
             <div class="post-info">
               <span>
-                2019-01-25
+                2021-10-23
               </span>
               <span>
-                1 min read
+                2 min read
               </span>
+              
+                <a href="https://FengShuHuan.github.io/tag/7tzL8dHle/" class="post-tag">
+                  # Python
+                </a>
               
             </div>
             
+              <img class="post-feature-image" src="https://FengShuHuan.github.io/post-images/python-zuo-ye-jie-jue.png" alt="">
+            
             <div class="post-content-wrapper">
               <div class="post-content">
-                <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h1 id="关于本站">🏠 关于本站</h1>
-<p>闲的没事搞的，用来写笔记</p>
-<h1 id="博主是谁">👨‍💻 博主是谁</h1>
-<p>带专生一枚</p>
-<h1 id="兴趣爱好">⛹ 兴趣爱好</h1>
-<p>游戏</p>
-<h1 id="联系我呀">📬 联系我呀</h1>
-<p>🐧:3497504389</p>
+                <h2 id="要求">要求:</h2>
+<p>读取Attendance.txt文件内的出勤统计表,存放位置任意.<br>
+计算各人的请假天数<br>
+计算各人的出勤率<br>
+出勤率80%以上为&quot;良好&quot;,包括80%<br>
+出勤率80%以下为&quot;较差&quot;<br>
+计算集体出勤率.</p>
+<h2 id="代码">代码：</h2>
+<pre><code class="language-f=open('C:\Users\abc\Desktop\python前五章阶段性作业\Attendance.txt',">next(f)#从第二行开始
+b=0#总出勤的变量初始
+c=0#总天数的变量初始
+for l in f:#遍历列表
+    #print(l)#打印行
+    O=l.count('O')#查O有几个
+    X=l.count('X')#X有几个
+    a=O/(X+O)*100#计算个人的出勤率
+    z=l[:3]#提取列表前3个元素
+    print(z,end='')#不换行输出前三个元素
+    print('出勤', O)#输出个人出勤天数
+    print('缺勤', X)#输出个人缺勤天数
+    print('出勤率为：%.0f %%'%a)#输出个人的出勤率
+    if a&gt;80:#判断出勤率是否大于80，出勤率80%以上为&quot;良好&quot;,包括80%出勤率80%以下为&quot;较差&quot;
+        print('良好')#出勤率80%以上为&quot;良好&quot;
+    else:
+        print('较差')#包括80%出勤率80%以下为&quot;较差&quot;
+    b=O+b#计算总出勤
+    c=X+O+c#计算总天数
+#print(b)
+#print(c)
+d=b/c*100#计算总出勤率
+print('\n    总出勤率为：    %.0f %%'%d)#输出总出勤率```</code></pre>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
-<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">📬 联系我呀</a></li>
+<li>
+<ul>
+<li><a href="#%E8%A6%81%E6%B1%82">要求:</a></li>
+<li><a href="#%E4%BB%A3%E7%A0%81">代码：</a></li>
+</ul>
+</li>
 </ul>
 
               </div>
@@ -125,6 +149,15 @@
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://FengShuHuan.github.io/post/lian-jie-wai-bu-css-yang-shi-biao/">
+              <h3 class="post-title">
+                链接外部css样式表
+              </h3>
+            </a>
+          </div>
         
 
         
