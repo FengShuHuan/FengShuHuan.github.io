@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://FengShuHuan.github.io</id>
     <title>一千万年银河の笔记</title>
-    <updated>2021-10-24T01:45:39.978Z</updated>
+    <updated>2021-10-24T01:54:25.176Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://FengShuHuan.github.io"/>
     <link rel="self" href="https://FengShuHuan.github.io/atom.xml"/>
@@ -24,30 +24,30 @@
 出勤率80%以下为&quot;较差&quot;<br>
 计算集体出勤率.</p>
 <h2 id="代码">代码：</h2>
-<p>f=open('C:\Users\abc\Desktop\python前五章阶段性作业\Attendance.txt', mode='r')   #打开txt<br>
-next(f)#从第二行开始<br>
-b=0#总出勤的变量初始<br>
-c=0#总天数的变量初始<br>
-for l in f:#遍历列表<br>
-#print(l)#打印行<br>
-O=l.count('O')#查O有几个<br>
-X=l.count('X')#X有几个<br>
-a=O/(X+O)<em>100#计算个人的出勤率<br>
-z=l[:3]#提取列表前3个元素<br>
-print(z,end='')#不换行输出前三个元素<br>
-print('出勤', O)#输出个人出勤天数<br>
-print('缺勤', X)#输出个人缺勤天数<br>
-print('出勤率为：%.0f %%'%a)#输出个人的出勤率<br>
-if a&gt;80:#判断出勤率是否大于80，出勤率80%以上为&quot;良好&quot;,包括80%出勤率80%以下为&quot;较差&quot;<br>
-print('良好')#出勤率80%以上为&quot;良好&quot;<br>
-else:<br>
-print('较差')#包括80%出勤率80%以下为&quot;较差&quot;<br>
-b=O+b#计算总出勤<br>
-c=X+O+c#计算总天数<br>
-#print(b)<br>
-#print(c)<br>
-d=b/c</em>100#计算总出勤率<br>
-print('\n    总出勤率为：    %.0f %%'%d)#输出总出勤率</p>
+<pre><code>f=open('C:\\Users\\abc\\Desktop\\python前五章阶段性作业\\Attendance.txt', mode='r')   #打开txt
+next(f)#从第二行开始
+b=0#总出勤的变量初始
+c=0#总天数的变量初始
+for l in f:#遍历列表
+    #print(l)#打印行
+    O=l.count('O')#查O有几个
+    X=l.count('X')#X有几个
+    a=O/(X+O)*100#计算个人的出勤率
+    z=l[:3]#提取列表前3个元素
+    print(z,end='')#不换行输出前三个元素
+    print('出勤', O)#输出个人出勤天数
+    print('缺勤', X)#输出个人缺勤天数
+    print('出勤率为：%.0f %%'%a)#输出个人的出勤率
+    if a&gt;80:#判断出勤率是否大于80，出勤率80%以上为&quot;良好&quot;,包括80%出勤率80%以下为&quot;较差&quot;
+        print('良好')#出勤率80%以上为&quot;良好&quot;
+    else:
+        print('较差')#包括80%出勤率80%以下为&quot;较差&quot;
+    b=O+b#计算总出勤
+    c=X+O+c#计算总天数
+#print(b)
+#print(c)
+d=b/c*100#计算总出勤率
+print('\n    总出勤率为：    %.0f %%'%d)#输出总出勤率</code></pre>
 ]]></content>
     </entry>
     <entry>
