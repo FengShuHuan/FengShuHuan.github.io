@@ -2,23 +2,23 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>三和弦 | 一千万年银河の笔记</title>
+<title>Python作业（二） | 一千万年银河の笔记</title>
 <link rel="shortcut icon" href="https://FengShuHuan.github.io/favicon.ico?v=1635666657136">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://FengShuHuan.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="三和弦 | 一千万年银河の笔记 - Atom Feed" href="https://FengShuHuan.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="Python作业（二） | 一千万年银河の笔记 - Atom Feed" href="https://FengShuHuan.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="
-音乐是爱的召唤，是情的流露，是天使的乐章。
-
-
-大三度和小三度
-大三度，小三度，是构成大三和弦和小三和弦的 最基本的单位。
-大小三度就是要看三度音程内是否含有半音，含一组半音的就是小三度（有 1  1/2 个全音），不含半音的就是大三度（..." />
-    <meta name="keywords" content="音乐" />
+    <meta name="description" content="要求：封装成函数并调用
+代码：
+next(f)#从第二行开始
+def chuqinlv(chuqin,tianshu,a):# 定义出勤率函数
+    a = chuqin / tianshu * 100
+    return a
+def ..." />
+    <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -80,63 +80,55 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              三和弦
+              Python作业（二）
             </h2>
             <div class="post-info">
               <span>
-                2021-09-04
+                2021-10-26
               </span>
               <span>
                 2 min read
               </span>
               
-                <a href="https://FengShuHuan.github.io/tag/sucPMesGw/" class="post-tag">
-                  # 音乐
-                </a>
-              
             </div>
             
-              <img class="post-feature-image" src="https://FengShuHuan.github.io/post-images/san-he-xian.jpg" alt="">
+              <img class="post-feature-image" src="https://FengShuHuan.github.io/post-images/python-zuo-ye-er.png" alt="">
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <blockquote>
-<p>音乐是爱的召唤，是情的流露，是天使的乐章。</p>
-</blockquote>
-<hr>
-<h2 id="大三度和小三度"><strong>大三度和小三度</strong></h2>
-<p>大三度，小三度，是构成大三和弦和小三和弦的 最基本的单位。<br>
-大小三度就是要看三度音程内是否含有半音，含一组半音的就是小三度（有 1  1/2 个全音），不含半音的就是大三度（有2个全音）。</p>
-<h2 id="三和弦的种类"><strong>三和弦的种类</strong></h2>
-<p>在常用和弦中：<br>
-1  4  5  级为 大三和弦<br>
-2  3  6  级为 小三和弦<br>
-7     级为 减三和弦<br>
-（还有不常见的增三和弦）</p>
-<h2 id="三和弦公式"><strong>三和弦公式</strong></h2>
-<p>大三和弦：大三度+小三度<br>
-小三和弦：小三度+大三度<br>
-减三和弦：小三度+小三度<br>
-增三和弦：大三度+大三度</p>
-<h2 id="在常用和弦图中为什么c调的七级和弦为g7而不是bdim"><strong>在常用和弦图中，为什么C调的七级和弦为G7，而不是Bdim？</strong></h2>
-<p>不管什么乐器，C自然大调，七级和弦肯定是根音以音名B构成，简谱7。<br>
-以7为根音的三和弦，7 2 4，小三度加小三度，减三和弦，Bdim，也可以写成B-。因为是个减三和弦所以特色就是不稳定。而G7和弦5 7 2 4，作为大调属七和弦稳定性相比较强，且 包含7 2 4三音，也就是Bdim的构成音，所以常常代替大调式中的七级减三和弦。</p>
-<hr>
-<p>21.01.17 整理</p>
+                <p>要求：封装成函数并调用<br>
+代码：</p>
+<pre><code class="language-f=open('D:\01">next(f)#从第二行开始
+def chuqinlv(chuqin,tianshu,a):# 定义出勤率函数
+    a = chuqin / tianshu * 100
+    return a
+def panduan():#判断出勤率优良的函数
+    if a&gt;80:#判断出勤率是否大于80，出勤率80%以上为&quot;良好&quot;,包括80%出勤率80%以下为&quot;较差&quot;
+        print('良好')#出勤率80%以上为&quot;良好&quot;
+    else:
+        print('较差')#包括80%出勤率80%以下为&quot;较差&quot;
+b=0#总出勤的变量初始
+c=0#总天数的变量初始
+for l in f:#遍历列表
+    #print(l)#打印行
+    O=l.count('O')#查O有几个
+    X=l.count('X')#X有几个
+    n=O+X#总天数
+    z=l[:3]#提取列表前3个元素
+    print(z)#输出前三个元素
+    print('出勤', O)#输出个人出勤天数
+    print('缺勤', X)#输出个人缺勤天数
+    a=chuqinlv(O,n,0)#调用chuqinlv函数
+    print('出勤率为：%.0f%%'% a)
+    panduan()#调用pamduan函数
+    print('-------------')
+    b=O+b#计算总出勤
+    c=X+O+c#计算总天数
+print('\n总出勤率为：%.0f %%'%chuqinlv(b,c,0))#调用chuqinlvhanshu输出总出勤率```</code></pre>
 
               </div>
               <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E5%A4%A7%E4%B8%89%E5%BA%A6%E5%92%8C%E5%B0%8F%E4%B8%89%E5%BA%A6"><strong>大三度和小三度</strong></a></li>
-<li><a href="#%E4%B8%89%E5%92%8C%E5%BC%A6%E7%9A%84%E7%A7%8D%E7%B1%BB"><strong>三和弦的种类</strong></a></li>
-<li><a href="#%E4%B8%89%E5%92%8C%E5%BC%A6%E5%85%AC%E5%BC%8F"><strong>三和弦公式</strong></a></li>
-<li><a href="#%E5%9C%A8%E5%B8%B8%E7%94%A8%E5%92%8C%E5%BC%A6%E5%9B%BE%E4%B8%AD%E4%B8%BA%E4%BB%80%E4%B9%88c%E8%B0%83%E7%9A%84%E4%B8%83%E7%BA%A7%E5%92%8C%E5%BC%A6%E4%B8%BAg7%E8%80%8C%E4%B8%8D%E6%98%AFbdim"><strong>在常用和弦图中，为什么C调的七级和弦为G7，而不是Bdim？</strong></a></li>
-</ul>
-</li>
-</ul>
-
+                
               </div>
             </div>
           </article>
@@ -145,9 +137,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://FengShuHuan.github.io/post/ri-yu-wu-shi-yin-nosu-ji/">
+            <a href="https://FengShuHuan.github.io/post/python-zuo-ye-jie-jue/">
               <h3 class="post-title">
-                日语五十音の速记
+                Python作业解决
               </h3>
             </a>
           </div>
