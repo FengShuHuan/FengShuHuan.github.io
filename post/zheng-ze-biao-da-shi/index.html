@@ -2,25 +2,21 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>七和弦 | 一千万年银河の笔记</title>
+<title>正则表达式 | 一千万年银河の笔记</title>
 <link rel="shortcut icon" href="https://FengShuHuan.github.io/favicon.ico?v=1636602362556">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://FengShuHuan.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="七和弦 | 一千万年银河の笔记 - Atom Feed" href="https://FengShuHuan.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="正则表达式 | 一千万年银河の笔记 - Atom Feed" href="https://FengShuHuan.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="七和弦的种类
-在自然大调内顺阶七和弦中：
-1    4   级为	大七和弦
-5     级为	属七和弦
-2  3  6  级为 小七和弦
-7     级为 半减七和弦
-七和弦种类表：
-名称	构成	标记
-大七	大三和弦+大七度	maj7、△7..." />
-    <meta name="keywords" content="音乐" />
+    <meta name="description" content="用户名要求：字母数字_ 不可以使用@#￥%&amp;
+import re
+def usename(name,password):
+    pattern=re.compile(r'^[a-zA-Z0-9_]{1,}$')
+    a=re...." />
+    <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -82,53 +78,55 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              七和弦
+              正则表达式
             </h2>
             <div class="post-info">
               <span>
-                2021-09-04
+                2021-11-11
               </span>
               <span>
                 1 min read
               </span>
               
-                <a href="https://FengShuHuan.github.io/tag/sucPMesGw/" class="post-tag">
-                  # 音乐
-                </a>
-              
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>七和弦的种类<br>
-在自然大调内顺阶七和弦中：<br>
-1    4   级为	大七和弦<br>
-5     级为	属七和弦<br>
-2  3  6  级为 小七和弦<br>
-7     级为 半减七和弦<br>
-七和弦种类表：<br>
-名称	构成	标记<br>
-大七	大三和弦+大七度	maj7、△7、M7<br>
-属七	大三和弦+小七度	7<br>
-小七	小三和弦+小七度	m7<br>
-半减七（小七减五）	减三和弦+小七度	m7-5<br>
-减七	减三和弦+减七度	dim7、°7<br>
-小大七	小三和弦+大七度	m△7、mM7<br>
-增七	增三和弦+小七度	+7、aug7<br>
-增大七	增三和弦+大七度	+M7、+△7<br>
-（标记中如果对“7”没有特殊标注，均为小七度音）<br>
-<audio id="audio" controls="" preload="none"></p>
-<source id="mp3" src="http://oht4nlntk.bkt.clouddn.com/Music_iP%E8%B5%B5%E9%9C%B2%20-%20%E7%A6%BB%E6%AD%8C%20%28Live%29.mp3">
-</audio>
+                <h1 id="用户名要求字母数字_-不可以使用">用户名要求：字母数字_ 不可以使用@#￥%&amp;</h1>
+<pre><code>import re
+def usename(name,password):
+    pattern=re.compile(r'^[a-zA-Z0-9_]{1,}$')
+    a=re.match(pattern,name)
+    if a:
+        print('ok')
+    else:
+        print('不合法，请重新输入')
+def main():
+    name=input('输入用户名：')
+    password=input('输入密码：')
+    usename(name,password)
+main() ```</code></pre>
 
               </div>
               <div class="toc-container">
-                
+                <ul class="markdownIt-TOC">
+<li><a href="#%E7%94%A8%E6%88%B7%E5%90%8D%E8%A6%81%E6%B1%82%E5%AD%97%E6%AF%8D%E6%95%B0%E5%AD%97_-%E4%B8%8D%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8">用户名要求：字母数字_ 不可以使用@#￥%&amp;</a></li>
+</ul>
+
               </div>
             </div>
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://FengShuHuan.github.io/post/python-zuo-ye-er/">
+              <h3 class="post-title">
+                Python作业-函数的定义与调用
+              </h3>
+            </a>
+          </div>
         
 
         
