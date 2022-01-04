@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://FengShuHuan.github.io</id>
     <title>一千万年银河の笔记</title>
-    <updated>2022-01-04T04:47:16.258Z</updated>
+    <updated>2022-01-04T05:43:05.336Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://FengShuHuan.github.io"/>
     <link rel="self" href="https://FengShuHuan.github.io/atom.xml"/>
@@ -11,7 +11,17 @@
     <icon>https://FengShuHuan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 一千万年银河の笔记</rights>
     <entry>
-        <title type="html"><![CDATA[Java（四） 标识符]]></title>
+        <title type="html"><![CDATA[Java（五） 变量]]></title>
+        <id>https://FengShuHuan.github.io/post/javawu/</id>
+        <link href="https://FengShuHuan.github.io/post/javawu/">
+        </link>
+        <updated>2022-01-04T04:58:02.000Z</updated>
+        <content type="html"><![CDATA[<p>什么是关键字<br>
+java语言已经规定好的，有特殊含义的，全部为小写的单词（例：见封面图）</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Java（四） 标识符与关键字]]></title>
         <id>https://FengShuHuan.github.io/post/javasi-biao-shi-fu/</id>
         <link href="https://FengShuHuan.github.io/post/javasi-biao-shi-fu/">
         </link>
@@ -31,6 +41,10 @@
    3.类名，接口名首字母要大写，后面的每个单词首字母要大写<br>
    4.变量名，方法名首字母小写，后面的每个单词首字母要大写<br>
    5.常量名全部大写，单词与单词之间用下划线“_”连接</p>
+<h3 id="什么是关键字"><strong>什么是关键字</strong></h3>
+<p>   java语言已经规定好的，有特殊含义的，全部为小写的单词<br>
+      例：<br>
+<img src="https://FengShuHuan.github.io/post-images/1641272648919.jpg" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
@@ -210,18 +224,6 @@ for l in f:#遍历列表
 #print(c)
 d=b/c*100#计算总出勤率
 print('\n    总出勤率为：    %.0f %%'%d)#输出总出勤率</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[链接外部css样式表]]></title>
-        <id>https://FengShuHuan.github.io/post/lian-jie-wai-bu-css-yang-shi-biao/</id>
-        <link href="https://FengShuHuan.github.io/post/lian-jie-wai-bu-css-yang-shi-biao/">
-        </link>
-        <updated>2021-09-21T06:15:44.000Z</updated>
-        <content type="html"><![CDATA[<p><code>&lt;link href=&quot;xin2.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;</code><br>
-href:规定链接的目标地址,指定超链接目标的URL<br>
-rel:指示被链接的文档是一个样式表(stlyesheet)<br>
-type:类型为文本或者是css</p>
 ]]></content>
     </entry>
 </feed>
