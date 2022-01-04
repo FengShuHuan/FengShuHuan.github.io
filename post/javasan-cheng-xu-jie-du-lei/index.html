@@ -2,21 +2,20 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>正则表达式 | 一千万年银河の笔记</title>
+<title>Java（三） 程序解读--类 | 一千万年银河の笔记</title>
 <link rel="shortcut icon" href="https://FengShuHuan.github.io/favicon.ico?v=1641271351751">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://FengShuHuan.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="正则表达式 | 一千万年银河の笔记 - Atom Feed" href="https://FengShuHuan.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="Java（三） 程序解读--类 | 一千万年银河の笔记 - Atom Feed" href="https://FengShuHuan.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="用户名要求：字母数字_ 不可以使用@#￥%&amp;
-import re
-def usename(name,password):
-    pattern=re.compile(r'^[a-zA-Z0-9_]{1,}$')
-    a=re...." />
-    <meta name="keywords" content="" />
+    <meta name="description" content="1、一个java源文件中可以定义多个class。
+2、 public的类不是必须的。可以没有。
+3、在源文件中只要有一个class的定义，那么必然会对应生成一个class文件。
+4、public的类可以没有，但如果有的话，public修饰的..." />
+    <meta name="keywords" content="Java,编程" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -78,42 +77,39 @@ def usename(name,password):
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              正则表达式
+              Java（三） 程序解读--类
             </h2>
             <div class="post-info">
               <span>
-                2021-11-11
+                2022-01-03
               </span>
               <span>
                 1 min read
               </span>
               
+                <a href="https://FengShuHuan.github.io/tag/4sH7NLjzF/" class="post-tag">
+                  # Java
+                </a>
+              
+                <a href="https://FengShuHuan.github.io/tag/uGqaz7Nm-/" class="post-tag">
+                  # 编程
+                </a>
+              
             </div>
+            
+              <img class="post-feature-image" src="https://FengShuHuan.github.io/post-images/javasan-cheng-xu-jie-du-lei.jpg" alt="">
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h1 id="用户名要求字母数字_-不可以使用">用户名要求：字母数字_ 不可以使用@#￥%&amp;</h1>
-<pre><code>import re
-def usename(name,password):
-    pattern=re.compile(r'^[a-zA-Z0-9_]{1,}$')
-    a=re.match(pattern,name)
-    if a:
-        print('ok')
-    else:
-        print('不合法，请重新输入')
-def main():
-    name=input('输入用户名：')
-    password=input('输入密码：')
-    usename(name,password)
-main() 
-</code></pre>
+                <p>1、一个java源文件中可以定义多个class。</p>
+<p>2、 public的类不是必须的。可以没有。</p>
+<p>3、在源文件中只要有一个class的定义，那么必然会对应生成一个class文件。</p>
+<p>4、public的类可以没有，但如果有的话，public修饰的类名必须和源文件名保持一致。</p>
+<p>5、public的类有也只能有1个。</p>
 
               </div>
               <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li><a href="#%E7%94%A8%E6%88%B7%E5%90%8D%E8%A6%81%E6%B1%82%E5%AD%97%E6%AF%8D%E6%95%B0%E5%AD%97_-%E4%B8%8D%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8">用户名要求：字母数字_ 不可以使用@#￥%&amp;</a></li>
-</ul>
-
+                
               </div>
             </div>
           </article>
@@ -122,9 +118,9 @@ main()
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://FengShuHuan.github.io/post/python-zuo-ye-er/">
+            <a href="https://FengShuHuan.github.io/post/javaer-bian-yi-bing-yun-xing-di-yi-ge-cheng-xu/">
               <h3 class="post-title">
-                Python作业-函数的定义与调用
+                Java（二）  编译并运行第一个程序
               </h3>
             </a>
           </div>

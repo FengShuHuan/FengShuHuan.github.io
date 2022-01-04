@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://FengShuHuan.github.io</id>
     <title>一千万年银河の笔记</title>
-    <updated>2022-01-03T04:20:56.170Z</updated>
+    <updated>2022-01-04T04:42:45.857Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://FengShuHuan.github.io"/>
     <link rel="self" href="https://FengShuHuan.github.io/atom.xml"/>
@@ -10,6 +10,42 @@
     <logo>https://FengShuHuan.github.io/images/avatar.png</logo>
     <icon>https://FengShuHuan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 一千万年银河の笔记</rights>
+    <entry>
+        <title type="html"><![CDATA[Java（四） 标识符]]></title>
+        <id>https://FengShuHuan.github.io/post/javasi-biao-shi-fu/</id>
+        <link href="https://FengShuHuan.github.io/post/javasi-biao-shi-fu/">
+        </link>
+        <updated>2022-01-04T04:02:48.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="什么是标识符"><strong>什么是标识符</strong></h3>
+<p>   凡是程序员有权利命名的单词，都是标识符，但是“main”不能修改</p>
+<h3 id="标识符的命名规则"><strong>标识符的命名规则</strong></h3>
+<p>   1.由数字，字母（包括中文），下划线，美元符号（$）组成<br>
+   2.不能以数字开头且不能用空格<br>
+   3.关键字不能作标识符<br>
+   4.严格区分大小写（“A”与“a”是不一样的）<br>
+      对于类来说，同时出现A类与a类，谁在前面生成谁<br>
+   5.理论上没有长度限制</p>
+<h3 id="标识符的命名规范"><strong>标识符的命名规范</strong></h3>
+<p>   1.见名知意<br>
+   2.驼峰命名（一高一低）<br>
+   3.类名，接口名首字母要大写，后面的每个单词首字母要大写<br>
+   4.变量名，方法名首字母小写，后面的每个单词首字母要大写<br>
+   5.常量名全部大写，单词与单词之间用下划线“_”连接</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Java（三） 程序解读--类]]></title>
+        <id>https://FengShuHuan.github.io/post/javasan-cheng-xu-jie-du-lei/</id>
+        <link href="https://FengShuHuan.github.io/post/javasan-cheng-xu-jie-du-lei/">
+        </link>
+        <updated>2022-01-03T07:58:46.000Z</updated>
+        <content type="html"><![CDATA[<p>1、一个java源文件中可以定义多个class。</p>
+<p>2、 public的类不是必须的。可以没有。</p>
+<p>3、在源文件中只要有一个class的定义，那么必然会对应生成一个class文件。</p>
+<p>4、public的类可以没有，但如果有的话，public修饰的类名必须和源文件名保持一致。</p>
+<p>5、public的类有也只能有1个。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Java（二）  编译并运行第一个程序]]></title>
         <id>https://FengShuHuan.github.io/post/javaer-bian-yi-bing-yun-xing-di-yi-ge-cheng-xu/</id>
@@ -36,7 +72,7 @@
         </link>
         <updated>2022-01-03T01:22:33.000Z</updated>
         <content type="html"><![CDATA[<p>什么是圆心辐射法：<br>
-000</p>
+占位占位占位占位占位占位占位</p>
 ]]></content>
     </entry>
     <entry>
@@ -45,22 +81,23 @@
         <link href="https://FengShuHuan.github.io/post/wo-de-di-yi-ge-java-cheng-xu/">
         </link>
         <updated>2022-01-03T01:19:55.000Z</updated>
-        <content type="html"><![CDATA[<p>1.安装JDK<br>
-（JDK就是Java开发工具机箱，它包含了Java运行环境‘JRE’和Java虚拟机‘JVM’）</p>
-<p>2.Java源文件：xxx.java</p>
+        <content type="html"><![CDATA[<h3 id="1安装jdk"><strong>1.安装JDK</strong></h3>
+<p>（JDK就是Java开发工具机箱，它包含了Java运行环境‘JRE’和Java虚拟机‘JVM’）</p>
+<h3 id="2java源文件xxxjava"><strong>2.Java源文件：xxx.java</strong></h3>
 <pre><code>Java编译后：xxx.class
 </code></pre>
-<p>3.编译后的.class文件，他们是程序的类，文件名就是类名</p>
-<p>4.javac命令编译</p>
+<h3 id="3编译后的class文件他们是程序的类文件名就是类名"><strong>3.编译后的.class文件，他们是程序的类，文件名就是类名</strong></h3>
+<figure data-type="image" tabindex="1"><img src="https://FengShuHuan.github.io/post-images/1641270866637.jpg" alt="" loading="lazy"></figure>
+<h3 id="4javac命令编译"><strong>4.javac命令编译</strong></h3>
 <pre><code>java命令运行
 </code></pre>
-<p>5.第一个Java程序<br>
-public class HelloWorld{<br>
-public static void main(String[] args){<br>
-System.out.printfln(&quot;Hello World!&quot;);<br>
-System.out.printfln(&quot;我的第一个Java程序。&quot;);<br>
-}<br>
-}</p>
+<h3 id="5第一个java程序"><strong>5.第一个Java程序</strong></h3>
+<pre><code>public class HelloWorld{
+    public static void main(String[] args){
+        System.out.printfln(&quot;Hello World!&quot;);
+        System.out.printfln(&quot;我的第一个Java程序。&quot;);
+    }
+}</code></pre>
 ]]></content>
     </entry>
     <entry>
@@ -185,93 +222,6 @@ print('\n    总出勤率为：    %.0f %%'%d)#输出总出勤率</code></pre>
 href:规定链接的目标地址,指定超链接目标的URL<br>
 rel:指示被链接的文档是一个样式表(stlyesheet)<br>
 type:类型为文本或者是css</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[CSS Id 和 Class]]></title>
-        <id>https://FengShuHuan.github.io/post/00/</id>
-        <link href="https://FengShuHuan.github.io/post/00/">
-        </link>
-        <updated>2021-09-05T07:30:14.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="id-和-class-选择器">id 和 class 选择器</h1>
-<p>如果你要在HTML元素中设置CSS样式，你需要在元素中设置&quot;id&quot; 和 &quot;class&quot;选择器。</p>
-<h2 id="id-选择器">id 选择器</h2>
-<p>id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。</p>
-<p>HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 &quot;#&quot; 来定义。</p>
-<p>以下的样式规则应用于元素属性 id=&quot;para1&quot;:</p>
-<p>实例<br>
-<code>#para1 { text-align:center; color:red; }</code></p>
-<p>Remark ID属性不要以数字开头，数字开头的ID在 Mozilla/Firefox 浏览器中不起作用。</p>
-<h2 id="class-选择器">class 选择器</h2>
-<p>class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。</p>
-<p>class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一个点&quot;.&quot;号显示：</p>
-<p>在以下的例子中，所有拥有 center 类的 HTML 元素均为居中。</p>
-<p>实例<br>
-<code>.center {text-align:center;}</code></p>
-<p>你也可以指定特定的HTML元素使用class。</p>
-<p>在以下实例中, 所有的 p 元素使用 class=&quot;center&quot; 让该元素的文本居中:</p>
-<p>实例<br>
-<code>p.center {text-align:center;}</code></p>
-<p><strong>Remark 类名的第一个字符不能使用数字！它无法在 Mozilla 或 Firefox 中起作用。</strong></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Markdown语法]]></title>
-        <id>https://FengShuHuan.github.io/post/markdown-yu-fa/</id>
-        <link href="https://FengShuHuan.github.io/post/markdown-yu-fa/">
-        </link>
-        <updated>2021-09-04T14:17:07.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="1标题">1.标题：</h2>
-<p>在想要设置为标题的文字前面加#来表示<br>
-一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。<br>
-注：标准语法一般在#后跟个空格再写文字</p>
-<pre><code># 这是一级标题
-## 这是二级标题
-### 这是三级标题
-#### 这是四级标题
-##### 这是五级标题
-###### 这是六级标题
-</code></pre>
-<h2 id="2字体">2.字体</h2>
-<h3 id="加粗">加粗</h3>
-<p>要加粗的文字左右分别用两个*号包起来</p>
-<h3 id="斜体">斜体</h3>
-<p>要倾斜的文字左右分别用一个*号包起来</p>
-<h3 id="斜体加粗">斜体加粗</h3>
-<p>要倾斜和加粗的文字左右分别用三个*号包起来</p>
-<h3 id="删除线">删除线</h3>
-<p>要加删除线的文字左右分别用两个~~号包起来</p>
-<pre><code>**这是加粗的文字**
-*这是倾斜的文字*`
-***这是斜体加粗的文字***
-~~这是加删除线的文字~~
-</code></pre>
-<h3 id="3引用">3.引用</h3>
-<p>在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt;<br>
-n个...<br>
-貌似可以一直加下去，但没神马卵用</p>
-<pre><code>&gt;这是引用的内容
-&gt;&gt;这是引用的内容
-&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是引用的内容
-</code></pre>
-<h3 id="4分割线">4.分割线</h3>
-<p>三个或者三个以上的 - 或者 * 都可以</p>
-<pre><code>---
-----
-***
-*****
-</code></pre>
-<h3 id="5图片">5.图片</h3>
-<p>上传本地图片直接点击导航栏的图片标志，选择图片即可<br>
-markdown格式追求的是简单、多平台统一。那么图片的存储就是一个问题，需要用图床，提<br>
-供统一的外链，这样就不用在不同的平台去处理图片的问题了。才能做到书写一次，各处使<br>
-用。</p>
-<pre><code>![图片alt](图片地址 ''图片title'')
-图片alt就是显示在图片下面的文字，相当于对图片内容的解释。
-图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加
-</code></pre>
-<h3 id="6空格">6.空格</h3>
-<pre><code>&amp;nbsp;</code></pre>
 ]]></content>
     </entry>
 </feed>
