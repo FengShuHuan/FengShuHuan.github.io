@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://FengShuHuan.github.io</id>
     <title>一千万年银河の笔记</title>
-    <updated>2022-01-04T05:43:05.336Z</updated>
+    <updated>2022-01-06T01:22:42.624Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://FengShuHuan.github.io"/>
     <link rel="self" href="https://FengShuHuan.github.io/atom.xml"/>
@@ -16,8 +16,31 @@
         <link href="https://FengShuHuan.github.io/post/javawu/">
         </link>
         <updated>2022-01-04T04:58:02.000Z</updated>
-        <content type="html"><![CDATA[<p>什么是关键字<br>
-java语言已经规定好的，有特殊含义的，全部为小写的单词（例：见封面图）</p>
+        <content type="html"><![CDATA[<h3 id="1什么是变量"><strong>1.什么是变量</strong></h3>
+<p>   变量就是内存中  存储数据的最基本的单元（就是存数据的“盒子”）</p>
+<h3 id="2变量的数据类型有什么用"><strong>2.变量的数据类型有什么用</strong></h3>
+<p>   不同的数据类型在内存中分配的空间大小不同，JVM是根据不同的数据类型分配不同大小的空间<br>
+   例：int分配4个字节空间<br>
+         1字节=8比特位（bit）<br>
+         1比特位=一个1或者0（二进制）</p>
+<h3 id="3变量的三要素"><strong>3.变量的三要素</strong></h3>
+<p>   数据类型   决定空间大小<br>
+   变量名       通过名方便访问<br>
+   值             数据</p>
+<h3 id="4命名规则var是标识符依照标识符的命名规则和规范"><strong>4.命名规则（var是标识符，依照标识符的命名规则和规范）</strong></h3>
+<p>   由数字，字母，下划线，美元符号组成<br>
+   不能以数字开头，不能有空格<br>
+   关键字不可作变量名<br>
+   变量名不可以重复（大小写是不一样的）<br>
+   理论上长度无限制</p>
+<h3 id="5命名规范"><strong>5.命名规范</strong></h3>
+<p>   见名知意<br>
+   驼峰命名<br>
+   首字母小写，后面单词的首字母大写</p>
+<h3 id="6声明与赋值同c语言"><strong>6.声明与赋值（同C语言）</strong></h3>
+<p>   声明：   类型       变量名  ；<br>
+   <font color=#FF0000>（注意：变量名必须先声明并赋值后才能访问，没有赋值就相当于这个空间没有被开辟）</font><br>
+   赋值：  变量名    =     值   ；</p>
 ]]></content>
     </entry>
     <entry>
