@@ -2,18 +2,23 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>日语五十音の速记 | 一千万年银河の笔记</title>
+<title>Java（六） i++与++i | 一千万年银河の笔记</title>
 <link rel="shortcut icon" href="https://FengShuHuan.github.io/favicon.ico?v=1641529807362">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://FengShuHuan.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="日语五十音の速记 | 一千万年银河の笔记 - Atom Feed" href="https://FengShuHuan.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="Java（六） i++与++i | 一千万年银河の笔记 - Atom Feed" href="https://FengShuHuan.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="
-..." />
-    <meta name="keywords" content="日语" />
+    <meta name="description" content="什么是“++”？
+   ++就是自加1
+对于++运算符来说：
+   可以出现在变量前，也可以出现在变量后。
+   不管出现在变量前还是后，总之++执行结束之后，变量的值一定会自加1。
+++出现在变量前和变量后有什么区别？
+   当++出现在..." />
+    <meta name="keywords" content="Java,编程" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -75,31 +80,74 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              日语五十音の速记
+              Java（六） i++与++i
             </h2>
             <div class="post-info">
               <span>
-                2021-09-04
+                2022-01-07
               </span>
               <span>
-                0 min read
+                1 min read
               </span>
               
-                <a href="https://FengShuHuan.github.io/tag/LnrczYBa4/" class="post-tag">
-                  # 日语
+                <a href="https://FengShuHuan.github.io/tag/4sH7NLjzF/" class="post-tag">
+                  # Java
+                </a>
+              
+                <a href="https://FengShuHuan.github.io/tag/uGqaz7Nm-/" class="post-tag">
+                  # 编程
                 </a>
               
             </div>
             
-              <img class="post-feature-image" src="https://FengShuHuan.github.io/post-images/ri-yu-wu-shi-yin-nosu-ji.jpg" alt="">
+              <img class="post-feature-image" src="https://FengShuHuan.github.io/post-images/javaliu.jpg" alt="">
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <figure data-type="image" tabindex="1"><img src="https://FengShuHuan.github.io/post-images/1630736767037.jpg" alt="" loading="lazy"></figure>
+                <h3 id="什么是"><strong>什么是“++”？</strong></h3>
+<p>   ++就是自加1</p>
+<h3 id="对于运算符来说"><strong>对于++运算符来说：</strong></h3>
+<p>   可以出现在变量前，也可以出现在变量后。<br>
+   不管出现在变量前还是后，总之++执行结束之后，变量的值一定会自加1。</p>
+<h3 id="出现在变量前和变量后有什么区别"><strong>++出现在变量前和变量后有什么区别？</strong></h3>
+<p>   当++出现在变量后，会先做赋值运算，再自加1<br>
+   当++出现在变量前的时候，会先进行自加1的运算，然后再赋值。</p>
+<h3 id="例"><strong>例：</strong></h3>
+<pre><code>// 题目
+int c = 90;
+System.out.println(c++);  // 在这里有一个隐形的赋值运算。这里输出90
+// 把上面代码拆解开
+//int temp = c++;   这里就是先赋值在+1
+//System.out.println(temp); 输出90
+
+System.out.println(c); // 输出91
+
+int d = 80;
+System.out.println(++d); //81
+// 拆解
+//int temp2 = ++d;  先+1在赋值
+//System.out.println(temp2);
+
+System.out.println(d); // 81
+</code></pre>
 
               </div>
               <div class="toc-container">
-                
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AF"><strong>什么是“++”？</strong></a></li>
+<li><a href="#%E5%AF%B9%E4%BA%8E%E8%BF%90%E7%AE%97%E7%AC%A6%E6%9D%A5%E8%AF%B4"><strong>对于++运算符来说：</strong></a></li>
+<li><a href="#%E5%87%BA%E7%8E%B0%E5%9C%A8%E5%8F%98%E9%87%8F%E5%89%8D%E5%92%8C%E5%8F%98%E9%87%8F%E5%90%8E%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><strong>++出现在变量前和变量后有什么区别？</strong></a></li>
+<li><a href="#%E4%BE%8B"><strong>例：</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
               </div>
             </div>
           </article>
@@ -108,9 +156,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://FengShuHuan.github.io/post/wang-ye-zhi-zuo-bi-ji/">
+            <a href="https://FengShuHuan.github.io/post/javawu/">
               <h3 class="post-title">
-                网页制作笔记
+                Java（五） 变量
               </h3>
             </a>
           </div>

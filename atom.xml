@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://FengShuHuan.github.io</id>
     <title>一千万年银河の笔记</title>
-    <updated>2022-01-06T01:22:42.624Z</updated>
+    <updated>2022-01-07T04:30:22.389Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://FengShuHuan.github.io"/>
     <link rel="self" href="https://FengShuHuan.github.io/atom.xml"/>
@@ -10,6 +10,40 @@
     <logo>https://FengShuHuan.github.io/images/avatar.png</logo>
     <icon>https://FengShuHuan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 一千万年银河の笔记</rights>
+    <entry>
+        <title type="html"><![CDATA[Java（六） i++与++i]]></title>
+        <id>https://FengShuHuan.github.io/post/javaliu/</id>
+        <link href="https://FengShuHuan.github.io/post/javaliu/">
+        </link>
+        <updated>2022-01-07T04:19:33.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="什么是"><strong>什么是“++”？</strong></h3>
+<p>   ++就是自加1</p>
+<h3 id="对于运算符来说"><strong>对于++运算符来说：</strong></h3>
+<p>   可以出现在变量前，也可以出现在变量后。<br>
+   不管出现在变量前还是后，总之++执行结束之后，变量的值一定会自加1。</p>
+<h3 id="出现在变量前和变量后有什么区别"><strong>++出现在变量前和变量后有什么区别？</strong></h3>
+<p>   当++出现在变量后，会先做赋值运算，再自加1<br>
+   当++出现在变量前的时候，会先进行自加1的运算，然后再赋值。</p>
+<h3 id="例"><strong>例：</strong></h3>
+<pre><code>// 题目
+int c = 90;
+System.out.println(c++);  // 在这里有一个隐形的赋值运算。这里输出90
+// 把上面代码拆解开
+//int temp = c++;   这里就是先赋值在+1
+//System.out.println(temp); 输出90
+
+System.out.println(c); // 输出91
+
+int d = 80;
+System.out.println(++d); //81
+// 拆解
+//int temp2 = ++d;  先+1在赋值
+//System.out.println(temp2);
+
+System.out.println(d); // 81
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Java（五） 变量]]></title>
         <id>https://FengShuHuan.github.io/post/javawu/</id>
@@ -207,46 +241,6 @@ for l in f:#遍历列表
     b=O+b#计算总出勤
     c=X+O+c#计算总天数
 print('\n总出勤率为：%.0f %%'%chuqinlv(b,c,0))#调用chuqinlvhanshu输出总出勤率```</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Python作业解决]]></title>
-        <id>https://FengShuHuan.github.io/post/python-zuo-ye-jie-jue/</id>
-        <link href="https://FengShuHuan.github.io/post/python-zuo-ye-jie-jue/">
-        </link>
-        <updated>2021-10-23T11:14:41.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="要求">要求:</h2>
-<p>读取Attendance.txt文件内的出勤统计表,存放位置任意.<br>
-计算各人的请假天数<br>
-计算各人的出勤率<br>
-出勤率80%以上为&quot;良好&quot;,包括80%<br>
-出勤率80%以下为&quot;较差&quot;<br>
-计算集体出勤率.</p>
-<h2 id="代码">代码：</h2>
-<pre><code>f=open('C:\\Users\\abc\\Desktop\\python前五章阶段性作业\\Attendance.txt', mode='r')   #打开txt
-next(f)#从第二行开始
-b=0#总出勤的变量初始
-c=0#总天数的变量初始
-for l in f:#遍历列表
-    #print(l)#打印行
-    O=l.count('O')#查O有几个
-    X=l.count('X')#X有几个
-    a=O/(X+O)*100#计算个人的出勤率
-    z=l[:3]#提取列表前3个元素
-    print(z,end='')#不换行输出前三个元素
-    print('出勤', O)#输出个人出勤天数
-    print('缺勤', X)#输出个人缺勤天数
-    print('出勤率为：%.0f %%'%a)#输出个人的出勤率
-    if a&gt;80:#判断出勤率是否大于80，出勤率80%以上为&quot;良好&quot;,包括80%出勤率80%以下为&quot;较差&quot;
-        print('良好')#出勤率80%以上为&quot;良好&quot;
-    else:
-        print('较差')#包括80%出勤率80%以下为&quot;较差&quot;
-    b=O+b#计算总出勤
-    c=X+O+c#计算总天数
-#print(b)
-#print(c)
-d=b/c*100#计算总出勤率
-print('\n    总出勤率为：    %.0f %%'%d)#输出总出勤率</code></pre>
 ]]></content>
     </entry>
 </feed>
