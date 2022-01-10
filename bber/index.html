@@ -53,7 +53,7 @@ $(document).ready(function(){
     <link rel="stylesheet" href="https://FengShuHuan.github.io/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://FengShuHuan.github.io/styles/main.css">
     
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/dracula.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css">
     
     <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
@@ -118,6 +118,114 @@ $(document).ready(function(){
 
     <!----------------- 顶部菜单栏👇 ------------------------>
     
+    <div>
+        <nav class="navbar navbar-inverse navbar-fixed-top navbartop">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a data-pjax class="navbar-brand" href="https://FengShuHuan.github.io"
+                        style="font-size:21px">一千万年银河の笔记&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+                    <a class="navbar-brand" href=""
+                        style="font-size:15px;font-family:kaiti">现在的你每一次想要学习都是未来的你给你发的求救信号</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse">
+                    
+                    <div class="search nav navbar-nav" style="margin-top:8px">
+                        <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
+                        <input type="text" class="search-input"
+                            placeholder="标题搜索 ⚆_⚆ つ♡">
+                        <div class="search-results"></div>
+                    </div>
+                    
+                <div class="search nav navbar-nav searchtop">
+                <a title="text" onclick="document.getElementById('socialMenu').style.display='block'"><i><img class="social"
+                    src="https://FengShuHuan.github.io/media/images/social.png" alt=""></i></a>
+                    <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
+                                src='https://FengShuHuan.github.io/media/images/music.png' alt="音乐播放器"
+                                class="musicbtn musictop"></i></a>
+                </div>
+                <ul class="nav navbar-nav" style="float: right;margin-right:5%">
+                    
+                    
+                    <li>
+                        <a data-pjax href="/" style="color:white">
+                            <i style="font-size: 40px;"><img class="icon menuicon" src="" alt="首页"></i>
+                            首页
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a data-pjax href="/archives" style="color:white">
+                            <i style="font-size: 40px;"><img class="icon menuicon" src="" alt="归档"></i>
+                            归档
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a data-pjax href="/tags" style="color:white">
+                            <i style="font-size: 40px;"><img class="icon menuicon" src="" alt="标签"></i>
+                            标签
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a data-pjax href="/post/about" style="color:white">
+                            <i style="font-size: 40px;"><img class="icon menuicon" src="" alt="关于"></i>
+                            关于
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a data-pjax href="https://FengShuHuan.github.io/friends" style="color:white">
+                            <i style="font-size: 40px;"><img class="icon menuicon" src="" alt="友人帐"></i>友人帐
+                        </a></li>
+                    
+                    <!--  -->
+                  <li><img src="https://FengShuHuan.github.io/images/avatar.png?v=1641812281630" alt=""
+                    class="menutopavatar"></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </nav>
+    <div id="socialMenu">
+        <div class="animate">
+            <div class="socialContainer">
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            <div id="qq" style="display:none"></div>
+        </div>
+    </div>
+
+    <script>
+        var social = document.getElementById('socialMenu');
+        var fancybox = document.getElementsByClassName('fancybox-stage');
+        // 鼠标点击模型外区域关闭登录框
+        window.onclick = function (event) {
+            if (event.target == social) {
+                social.style.display = "none";
+            }
+        }
+    </script>
+    </div>
+    
     <!----------------- 顶部菜单栏👆 ------------------------>
 
 <!--核心功能加载-->
@@ -158,7 +266,7 @@ $(document).ready(function(){
 <!------ 根据自定义配置声明变量👇 --------------------->
     
     <script>
-        let postnumChoice = false
+        let postnumChoice = true
     </script>
     
     
@@ -173,7 +281,7 @@ $(document).ready(function(){
     
     
     <script>
-        let searchChoice = false
+        let searchChoice = true
     </script>
     
     <script>let postsnum = 0;</script>
@@ -319,10 +427,9 @@ $(document).ready(function(){
     </div>
     
         <script>
-            let menupos = 'left';
-            $("#siteinfo-postsnum").html(postsnum);
+            let menupos = 'top'
         </script>
-    
+        
     <script>
         let commentsHide = false
     </script>
@@ -333,6 +440,8 @@ $(document).ready(function(){
     <script>
         var icondict = new Array();
     </script>
+    
+        
     
     <!----------根据自定义配置设置图标信息👆---------->
 </body>
@@ -351,7 +460,7 @@ $(document).ready(function(){
     get();
 
     function get() {
-        var t = JSON.parse('');
+        var t = JSON.parse('[]');
         talkindex = t.length - 1;
         for (var i = 0; i <= t.length - 1; i++) {
             var d = {};
@@ -542,13 +651,13 @@ $(document).ready(function(){
                 shareInit();
             if (donateChoice)
                 donateInit();
-            if ("" == "default"&&!commentsHide) {
+            if ("default" == "default"&&!commentsHide) {
                 $("#comment").hide()
                 commentsHide = true
             }
             lazyload();
             codeinit();
-            if ("" == "twikoo") {
+            if ("default" == "twikoo") {
                 //twikoo头像更换
                 setTimeout(replaceAvatar, 3000);
                 setTimeout(replaceAvatar, 8000); //部分博主站点速度加载过慢，再添加一个延迟
@@ -848,6 +957,9 @@ menulist.eq(i).show();
         
         
           
+        <li><a data-pjax href="https://FengShuHuan.github.io/friends">友链</a></li>
+
+        
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -888,7 +1000,7 @@ menulist.eq(i).show();
                     <div class="mobilebar">
                         <img src="" alt="" class="plbg">
 <script>
-    var bgchoice = "";
+    var bgchoice = "default";
     if(bgchoice=='default')
         var plbgurl = ""
     else  
@@ -906,7 +1018,7 @@ menulist.eq(i).show();
     <!-- 解析微信表情（参考：https://github.com/buddys/qq-wechat-emotion-parser） -->
     <!-- <script src="https://cdn.jsdelivr.net/gh/buddys/qq-wechat-emotion-parser@master/dist/qq-wechat-emotion-parser.min.js"></script> -->
 <script>
-    var limitstr = ''
+    var limitstr = '5'
     lnum = parseInt(limitstr)
     ispeakBber.init({
             el: '#speak', // 容器选择器
@@ -916,7 +1028,7 @@ menulist.eq(i).show();
             limit: lnum, // 每次加载的条数，默认为5
             avatar: '',
             fromColor: 'rgb(245, 150, 170)', // 下方标签背景颜色 默认 rgb(245, 150, 170)
-            loadingImg: '', // 自定义loading的图片，示例值为默认值
+            loadingImg: 'https://7.dusays.com/2021/03/04/d2d5e983e2961.gif', // 自定义loading的图片，示例值为默认值
             dbName: 'talks' // 数据的名称，默认talks，避免有人的命名不是这个，所以加入此配置字段。
         })
         .then(function () {
@@ -928,6 +1040,8 @@ menulist.eq(i).show();
                     <div id="comment" class="comment">
                       <div class="commentcontainer">
                          
+                                  
+                            
                         </div>
                     </div>
                    <!---------------------------- 评论系统👆 ------------------------->
@@ -941,10 +1055,10 @@ menulist.eq(i).show();
         <div id="bg">
         </div>
         <!------- 背景图加载方式👇----- -->
-        <div id="bgchoice" style="display: none">
+        <div id="bgchoice" style="display: none">default
             </div>
             
-            <div id="bgurl" style="display:none"></div>
+            <div id="bgurl" style="display:none">\media\images\custom-bgimage.jpg</div>
                
         <!------- 背景图加载方式👆----- -->
     </div>
@@ -964,7 +1078,7 @@ menulist.eq(i).show();
 
 <!------------ 加载全局背景图功能👇（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
 <script>
-    var bgchoice = ""
+    var bgchoice = "default"
     var bg = $('#bg');
     var bgurl = document.getElementById("bgurl").innerHTML;
     if (bgchoice == 'default')
