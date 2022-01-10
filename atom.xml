@@ -2,21 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://FengShuHuan.github.io</id>
     <title>一千万年银河の笔记</title>
-    <updated>2022-01-10T09:32:54.333Z</updated>
+    <updated>2022-01-10T09:35:04.424Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://FengShuHuan.github.io"/>
     <link rel="self" href="https://FengShuHuan.github.io/atom.xml"/>
-    <subtitle>现在的你每一次想要学习都是未来的你给你发的求救信号
-&lt;script&gt;
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement(&quot;script&quot;);
-  hm.src = &quot;https://hm.baidu.com/hm.js?25d1bc015f0e5576540788641d769e98&quot;;
-  var s = document.getElementsByTagName(&quot;script&quot;)[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-&lt;/script&gt;
-</subtitle>
+    <subtitle>现在的你每一次想要学习都是未来的你给你发的求救信号</subtitle>
     <logo>https://FengShuHuan.github.io/images/avatar.png</logo>
     <icon>https://FengShuHuan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 一千万年银河の笔记</rights>
