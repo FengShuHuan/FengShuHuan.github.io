@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://FengShuHuan.github.io</id>
     <title>一千万年银河の笔记</title>
-    <updated>2022-01-11T02:26:07.212Z</updated>
+    <updated>2022-01-11T02:35:32.837Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://FengShuHuan.github.io"/>
     <link rel="self" href="https://FengShuHuan.github.io/atom.xml"/>
@@ -165,8 +165,8 @@ System.out.println(d); // 81
 <h3 id="5第一个java程序"><strong>5.第一个Java程序</strong></h3>
 <pre><code>public class HelloWorld{
     public static void main(String[] args){
-        System.out.printfln(&quot;Hello World!&quot;);
-        System.out.printfln(&quot;我的第一个Java程序。&quot;);
+        System.out.println(&quot;Hello World!&quot;);
+        System.out.println(&quot;我的第一个Java程序。&quot;);
     }
 }</code></pre>
 ]]></content>
